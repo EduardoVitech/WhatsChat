@@ -1,8 +1,7 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:whats_chat/components/user_image_picker/user_image_picker.dart';
-import 'package:whats_chat/models/auth_form_data/auth_form_data.dart';
+import '../../core/models/auth_form_data/auth_form_data.dart';
 
 class AuthForm extends StatefulWidget {
   final void Function(AuthFormData) onSubmit;
