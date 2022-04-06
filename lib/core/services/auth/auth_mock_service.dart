@@ -6,9 +6,9 @@ import 'package:whats_chat/core/services/auth/auth_service.dart';
 
 class AuthMockService implements AuthService {
   static final _defaultUser = ChatUser(
-    id: '1',
-    name: 'Teste',
-    email: 'teste@teste.com',
+    id: '123',
+    name: 'Testando Pessoa',
+    email: 'testandoPessoa@teste.com',
     imageURL: 'assets/images/ImageUserNull.png',
   );
 
