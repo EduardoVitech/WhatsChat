@@ -24,29 +24,51 @@ class _NewMenssageState extends State<NewMenssage> {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          child: TextField(
-            controller: _messageController,
-            onChanged: (msg) => setState(() => _enteredMessage = msg),
-            decoration: const InputDecoration(
-              labelText: 'Enviar menssagem...',
+    return Container(
+      padding: const EdgeInsets.symmetric(
+        horizontal: 10,
+        vertical: 14,
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            child: TextField(
+              controller: _messageController,
+              onChanged: (msg) => setState(() => _enteredMessage = msg),
+              decoration: const InputDecoration(
+                labelText: 'Enviar menssagem...',
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.black54, width: 2.0),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(30),
+                  ),
+                ),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(30),
+                  ),
+                  borderSide: BorderSide(
+                    color: Colors.black54,
+                    width: 2,
+                  ),
+                ),
+              ),
             ),
-            onSubmitted: (_) {
-              if (_enteredMessage.trim().isNotEmpty) {
-                _sendMessage();
-              }
-            },
           ),
-        ),
-        IconButton(
-          onPressed: _enteredMessage.trim().isEmpty ? null : _sendMessage,
-          icon: const Icon(
-            Icons.send_rounded,
+          const SizedBox(width: 10),
+          CircleAvatar(
+            maxRadius: 25,
+            child: IconButton(
+              alignment: Alignment.center,
+              onPressed: _enteredMessage.trim().isEmpty ? null : _sendMessage,
+              icon: const Icon(
+                Icons.send_rounded,
+                color: Colors.white,
+              ),
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
