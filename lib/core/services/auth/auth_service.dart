@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:whats_chat/core/models/chat_user/chat_user.dart';
-import 'package:whats_chat/core/services/auth/auth_mock_service.dart';
+import 'auth_firebase_service.dart';
 
 abstract class AuthService {
   ChatUser? get currentUser;
@@ -22,7 +22,7 @@ abstract class AuthService {
   Future<void> logout();
 
   factory AuthService() {
-    return AuthMockService();
-    //return AuthFirebaseService();
+    //return AuthMockService();
+    return AuthFirebaseService();
   }
 }

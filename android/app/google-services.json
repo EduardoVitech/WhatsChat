@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "417570280342",
+    "project_id": "whatschat-5bb3c",
+    "storage_bucket": "whatschat-5bb3c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417570280342:android:c14aed1a7927df8b0883b7",
+        "android_client_info": {
+          "package_name": "br.com.whatschat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417570280342-pvrb2hlvjg014e8p6reqrpl7lf1k1ehj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACSAwRuDkT3GvjGO_VkSHxjUo4ziCqa3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417570280342-pvrb2hlvjg014e8p6reqrpl7lf1k1ehj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
