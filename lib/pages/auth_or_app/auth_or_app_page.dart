@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:whats_chat/core/services/notification/chat_notification_service.dart';
 import 'package:whats_chat/pages/auth_page/auth_page.dart';
 import 'package:whats_chat/pages/chat_page/chat_page.dart';
 import 'package:whats_chat/pages/loading_page/loading_page.dart';
@@ -11,6 +13,10 @@ class AuthOrAppPage extends StatelessWidget {
 
   Future<void> init(BuildContext context) async {
     await Firebase.initializeApp();
+    await Provider.of<ChatNotificationService>(
+      context,
+      listen: false,
+    ).init();
   }
 
   @override
