@@ -11,12 +11,9 @@ class LoadingPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text(
-              'Carregando...',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 20,
-              ),
+            Image.asset(
+              'assets/images/Logo.png',
+              scale: 3.5,
             ),
             const SizedBox(height: 10),
             Container(
