@@ -7,7 +7,7 @@ App de troca de mensagens desenvolvido em Flutter.
 # Telas
 
 - ## Inicio
-  - ![Tela de Inicio](./assets/INICI.png)
+  - ![Tela de Inicio](./assets/INICIO.png)
 
 - ## Login
   - ![Tela de Login](./assets/LOGIN.png)
@@ -16,16 +16,9 @@ App de troca de mensagens desenvolvido em Flutter.
   - ![Cadastro](./assets/CADASTRO.png)
 
 - ## Home
-  - ![Home](./assets/CARDAPIO.png)
+  - ![Home](./assets/CHAT.png)
 
-- ## Produto
-  - ![Produto](./assets/PRODUTO.png)
+  - ![Produto](./assets/CHAT-OFF.png)
 
-- ## Carrinho
-  - ![Carrinho](./assets/CARRINHO.png)
-
-- ## Compra
-  - ![Compra](./assets/COMPRA.png)
-
-- ## Pagamento
-  - ![Pagamento](./assets/QRCODE.png)
+- ## Notificação
+  - ![Carrinho](./assets/NOTIFICACAO.png)
